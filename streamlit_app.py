@@ -10,7 +10,6 @@ sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 from Portfolio import (
     calculate_portfolio_metrics,
     get_moroccan_stocks,
-    MOROCCAN_STOCKS,
     BLACK,
     RED,
     YELLOW,
@@ -154,19 +153,9 @@ with st.sidebar:
         </div>
         """, unsafe_allow_html=True)
     
-    # Refresh button
-    if st.button("🔄 Actualiser les cours", key="refresh_button"):
-        with st.spinner("Chargement des données..."):
-            stocks_df = get_moroccan_stocks()
-            if stocks_df is not None and not stocks_df.empty:
-                st.session_state.stocks_df = stocks_df
-                st.success(f"Données chargées avec succès! {len(stocks_df)} actions disponibles.")
-            else:
-                st.error("Impossible de charger les données des actions.")
-    
     # Initialize session state if not already done
     if 'stocks_df' not in st.session_state:
-        st.session_state.stocks_df = pd.DataFrame(MOROCCAN_STOCKS)
+        st.session_state.stocks_df = get_moroccan_stocks()
     
     # Portfolio configuration
     st.markdown("#### Composition du Portefeuille")
