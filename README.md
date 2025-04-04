@@ -1,19 +1,54 @@
-# 💬 Chatbot template
+# Portfolio Risk.MA - Bourse de Casablanca
 
-A simple Streamlit app that shows how to build a chatbot using OpenAI's GPT-3.5.
+A Streamlit-based portfolio management and analysis dashboard for the Casablanca Stock Exchange.
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://chatbot-template.streamlit.app/)
+## Features
 
-### How to run it on your own machine
+- Real-time portfolio tracking and analysis
+- Interactive charts and visualizations
+- Risk assessment and performance metrics
+- Sector distribution analysis
+- Stock performance comparison
 
-1. Install the requirements
+## Installation
 
-   ```
-   $ pip install -r requirements.txt
-   ```
+1. Clone the repository:
+```bash
+git clone https://github.com/marouane159/cse.git
+cd cse
+```
 
-2. Run the app
+2. Install the required dependencies:
+```bash
+pip install -r requirements.txt
+```
 
-   ```
-   $ streamlit run streamlit_app.py
-   ```
+3. Run the application:
+```bash
+streamlit run Portfolio.py
+```
+
+## Requirements
+
+- Python 3.8+
+- Streamlit
+- Pandas
+- NumPy
+- Plotly
+
+## Usage
+
+1. Select stocks from the Casablanca Stock Exchange
+2. Input your investment details
+3. View real-time portfolio analysis and metrics
+4. Monitor performance through interactive charts
+
+## Social Media
+
+- Website: [www.risk.ma](https://risk.ma/bourse-de-casablanca)
+- Instagram: [@risk.maroc](https://instagram.com/risk.maroc)
+- TikTok: [@risk.maroc](https://tiktok.com/@risk.maroc)
+
+## License
+
+© 2025 @risk.maroc - All rights reserved 
